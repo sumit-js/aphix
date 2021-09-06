@@ -1,5 +1,7 @@
 # Aphix-YouTube
 
+![alt text](https://github.com/sumit-js/aphix/blob/main/resources/views/img/logo.png?raw=true)
+
 Clone this Git Repo
 ```
 git clone https://github.com//sumit-js/aphix.git
@@ -64,5 +66,6 @@ protected function _singleVideo($id)
     }
 ```
 
-![Alt text](https://github.com/sumit-js/aphix/view/img/logo.png?raw=true "Title")
-![alt text](https://github.com/sumit-js/aphix/view/img/logo.png)
+
+# Screenshot
+![alt text](https://github.com/sumit-js/aphix/blob/main/resources/views/img/sc.png?raw=true)

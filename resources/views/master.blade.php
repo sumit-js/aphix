@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
 
 
-    <title>Laravel YouTube</title>
+    <title>AphixTube</title>
 
 <style>
         .top-bar {

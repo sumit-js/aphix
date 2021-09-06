@@ -24,7 +24,7 @@ SEARCH_ENDPOINT="https://www.googleapis.com/youtube/v3/search"
 ```
 # An Overview
 
-Code for YouTubeController.php to get the videos using Youtube API
+Code for YouTubeController.php to get the videos using Youtube API and store in JSON file.
 
 ```
 // We will get search result here
@@ -44,6 +44,22 @@ Code for YouTubeController.php to get the videos using Youtube API
 
         // We will create a json file to see our response
         File::put(storage_path() . '/app/public/results.json', $response->body());
+        return $results;
+    }
+```
+Code for YouTubeController.php to get single videos using Youtube API and store in JSON file.
+
+```
+protected function _singleVideo($id)
+    {
+        $apiKey = config('services.youtube.api_key');
+        $part = 'snippet';
+        $url = "https://www.googleapis.com/youtube/v3/videos?part=$part&id=$id&key=$apiKey";
+        $response = Http::get($url);
+        $results = json_decode($response);
+
+        // Will create a json file to see our single video details
+        File::put(storage_path() . '/app/public/single.json', $response->body());
         return $results;
     }
 ```

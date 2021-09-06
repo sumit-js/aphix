@@ -68,4 +68,4 @@ protected function _singleVideo($id)
 
 
 # Screenshot
-![alt text](https://github.com/sumit-js/aphix/blob/main/resources/views/img/sc.png?raw=true)
+![alt text](https://github.com/sumit-js/aphix/blob/main/resources/views/img/sc.PNG?raw=true)
